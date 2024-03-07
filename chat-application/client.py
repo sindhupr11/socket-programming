@@ -1,7 +1,6 @@
 import socket
 import threading
 
-# Function to receive messages from the server
 def receive_messages():
     while True:
         try:
@@ -10,7 +9,6 @@ def receive_messages():
         except Exception as e:
             print("Error:", e)
             break
-
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
